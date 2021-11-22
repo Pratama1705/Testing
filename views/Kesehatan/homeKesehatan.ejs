@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/homeKesehatan.css" />
+
+    <title>Home Kesehatan</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/home_kesehatan">
+          <img src="./Image/KonsepLogo1.png" alt="" width="30" height="30" class="d-inline-block align-text-mid" />
+          WAPTRID
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><img src="./image/icons8-menu-squared-50.png" width="30" height="30" alt="" /></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto me-5">
+            <li class="nav-item">
+              <a id="ini" class="nav-link active" aria-current="page" href="/logout_Kesehatan">Logout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/setting_kesehatan"><img src="./image/icons8-settings-100.png" width="30" height="30" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Alert if any error during input a value in form -->
+    <% if (locals.message) { %>
+    <div class="alert alert-danger" role="alert"><%= locals.message %></div>
+    <% } %>
+
+    <!-- Firstname -->
+    <div class="namaAwal">
+      <h4>Welcome, <%= locals.firstName %></h4>
+    </div>
+
+    <!-- Tanggal -->
+    <div class="tanggal">
+      <h6><%= locals.tanggal %></h6>
+    </div>
+
+    <!--Search Block-->
+    <div class="ayey">
+      <form action="/cekNIK" method="POST">
+        <div class="mb-3">
+          <label class="form-label">NIK</label>
+          <input name="NIK" placeholder="Input People NIK" type="text" class="form-control" id="exampleInputEmail1" />
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

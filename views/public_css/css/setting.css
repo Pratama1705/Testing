@@ -1,0 +1,221 @@
+body {
+  background-image: url('../image/Signup.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.registration-form {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.alert {
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.5);
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 70px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow: hidden;
+}
+
+form .p-view {
+  z-index: 9999;
+  position: absolute;
+  margin-left: 277px;
+  margin-top: -31px;
+}
+form .p-view2 {
+  z-index: 9999;
+  position: absolute;
+  margin-left: 277px;
+  margin-top: -31px;
+}
+
+.item {
+  border-radius: 20px;
+  max-width: 300px;
+  margin-bottom: 25px;
+  padding: 5px 20px;
+}
+
+.left {
+  width: 300px;
+  float: left;
+}
+.right {
+  width: 300px;
+  float: right;
+}
+.special {
+  margin-top: 355px;
+}
+
+.submit {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  max-width: 150px;
+  font-weight: bold;
+  background-color: #5791ff;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  margin-left: 250px;
+}
+
+.social-media {
+  max-width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 35px 0;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #9fadca;
+  border-top: 1px solid #dee9ff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.social-icons {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.social-icons a {
+  font-size: 23px;
+  margin: 0 3px;
+  color: #5691ff;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 45px;
+  display: inline-block;
+  height: 45px;
+  text-align: center;
+  background-color: #fff;
+  line-height: 45px;
+}
+
+.social-icons a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+@media (width: 768px) {
+  body {
+    background-image: url('../image/SignUpMobile\(320x516\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .alert {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+
+  .registration-form {
+    margin-top: 50%;
+  }
+
+  .registration-form form {
+    padding: 50px 20px;
+    border-radius: 20px;
+  }
+  .submit {
+    margin-left: 186px;
+    margin-bottom: -20px;
+  }
+
+  form .p-view {
+    z-index: 9999;
+    position: absolute;
+    margin-left: 222px;
+    margin-top: -31px;
+  }
+
+  form .p-view2 {
+    z-index: 9999;
+    position: absolute;
+    margin-left: 222px;
+    margin-top: -31px;
+  }
+}
+
+.dropdown-toggle {
+  transition: 0.3s;
+  color: blueviolet !important;
+}
+
+.dropdown-toggle:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+  color: blue !important;
+}
+
+.dropdown-item {
+  color: blueviolet !important;
+  transition: 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: aqua;
+  color: blue;
+}
+
+.navbar {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url('../image/SignUpMobile\(320x516\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .alert {
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+
+  .registration-form {
+    margin-top: 25%;
+  }
+
+  form {
+    max-width: 255px;
+    padding: 0px 0px;
+  }
+
+  .submit {
+    margin-left: 20px;
+    margin-bottom: 25px;
+  }
+
+  form .p-view {
+    z-index: 9999;
+    position: absolute;
+    margin-left: 155px;
+    margin-top: -31px;
+  }
+
+  form .p-view2 {
+    z-index: 9999;
+    position: absolute;
+    margin-left: 155px;
+    margin-top: -31px;
+  }
+}

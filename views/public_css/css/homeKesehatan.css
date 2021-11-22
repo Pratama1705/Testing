@@ -1,0 +1,75 @@
+body {
+  background-image: url('../image/LandingPage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background-color: #80d8de;
+}
+
+.navbar .container-fluid .navbar-brand {
+  margin-left: 3.5%;
+  color: #533f3f;
+}
+
+.navbar .container-fluid .navbar-brand img {
+  margin-right: 5%;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item a {
+  color: black;
+}
+
+.namaAwal {
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.tanggal {
+  margin-top: -3%;
+  margin-right: 5%;
+  float: right;
+}
+
+.ayey {
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+@media screen and (width: 768px) {
+  .namaAwal h4{
+    font-size: 20px;
+  }
+
+  .tanggal h6{
+    margin-top: -7px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  body {
+    background-image: url("../image/HomeMobile\(320x516\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .namaAwal h4{
+    margin-top: -3px;
+    margin-left: -10px;
+    font-size: 15px;
+  }
+
+  .tanggal h6{
+    margin-right: -12px;
+    margin-top: -16px;
+    font-size: 15px;
+  }
+
+  .ayey{
+    padding: 30px;
+    margin: 0;
+  }
+}

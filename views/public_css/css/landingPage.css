@@ -1,0 +1,47 @@
+body {
+  background-color: #eaeff2;
+  background-image: url("../image/LandingPageFIX.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background-color: #80d8de;
+}
+
+.navbar .container-fluid .navbar-brand {
+  margin-left: 3.5%;
+  color: #533f3f;
+}
+
+.navbar .container-fluid .navbar-brand img {
+  margin-right: 5%;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item a {
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #6b7e94;
+    background-image: url("../image/LandingPage\(Mobile\).png");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 100%;
+  }
+}
+
+@media screen and (width: 768px) {
+  .fotoLanding img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (width: 1199px) {
+  .fotoLanding img {
+    width: 100%;
+    height: 100%;
+  }
+}
