@@ -20,7 +20,7 @@
     <div class="registration-form">
       <form method="post" action="/login_wisata">
         <div class="form-icon">
-          <img src="./Image/KonsepLogo1.png" />
+          <img src="./image/KonsepLogo1.png" />
         </div>
         <div class="logintext">
           <h3>Login Wisata</h3>
@@ -31,16 +31,16 @@
         <div class="form-input">
           <input name="password" type="password" class="form-control item" id="password" placeholder="Password" />
           <span class="p-view">
-            <input type="checkbox" class="check" onclick="myFunction()">
+            <input type="checkbox" class="check" onclick="myFunction()" />
             <script>
-                function myFunction() {
-                    var x = document.getElementById("password");
-                    if (x.type == "password") {
-                        x.type = "text";
-                    } else {
-                        x.type = "password";
-                    }
+              function myFunction() {
+                var x = document.getElementById('password');
+                if (x.type == 'password') {
+                  x.type = 'text';
+                } else {
+                  x.type = 'password';
                 }
+              }
             </script>
           </span>
         </div>
