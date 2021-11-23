@@ -99,7 +99,7 @@ form .p-view {
 
 @media (max-width: 767px) {
   body {
-    background-image: url("../image/SignUpMobile\(320x516\).jpg");
+    background-image: url('../image/SignUpMobile\(320x516\).jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -117,7 +117,7 @@ form .p-view {
   form .p-view {
     z-index: 9999;
     position: absolute;
-    left: 160px;
+    left: -160px;
     margin-top: -60px;
   }
 }
