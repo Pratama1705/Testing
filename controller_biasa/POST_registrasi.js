@@ -1,7 +1,6 @@
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const Registrasi_Login_Biasa = require('../models/Biasa/loginRegisBiasa');
-const DB_User = require('../models/Biasa/personalBiasa');
 const { uploadImage } = require('../uploadFirebaseImage/uploadToStorage');
 
 const registrasi = async (req, res) => {
@@ -72,11 +71,7 @@ const registrasi = async (req, res) => {
     noHP: noHP,
     foto: url,
     password: hashPassword,
-  });
-  const personalDB = await new DB_User({
-    _id: id,
-    NIK: NIK,
-    noHP: noHP,
+    keterangan: [],
   });
   registrasi
     .save()
@@ -84,12 +79,7 @@ const registrasi = async (req, res) => {
       console.log(result);
     })
     .catch((err) => console.log(err));
-  personalDB
-    .save()
-    .then((result) => {
-      console.log(result);
-    })
-    .catch((err) => console.log(err));
+
   res.redirect('/login_biasa');
 };
 

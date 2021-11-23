@@ -1,4 +1,3 @@
-const DB_User = require('../models/Biasa/personalBiasa');
 const Registrasi_Login_Biasa = require('../models/Biasa/loginRegisBiasa');
 const jwt_decode = require('jwt-decode');
 const bcrypt = require('bcrypt');
@@ -43,9 +42,6 @@ const ubahProfile = async (req, res) => {
   const salt = await bcrypt.genSalt(10);
   const hashPassword = await bcrypt.hash(password, salt);
 
-  // const token = req.user;
-  // const decoded = jwt_decode(token);
-
   // Store data to DB
   const cariUbah = await Registrasi_Login_Biasa.findOne({ _id: decoded.id });
   cariUbah.firstName = firstName;
@@ -54,17 +50,7 @@ const ubahProfile = async (req, res) => {
   cariUbah.noHP = noHP;
   cariUbah.password = hashPassword;
 
-  const cariUbah_2 = await DB_User.findOne({ _id: decoded.id });
-  cariUbah_2.noHP = noHP;
-
   cariUbah
-    .save()
-    .then((result) => {
-      console.log(result);
-    })
-    .catch((err) => console.log(err));
-
-  cariUbah_2
     .save()
     .then((result) => {
       console.log(result);

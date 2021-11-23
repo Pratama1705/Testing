@@ -34,23 +34,23 @@ hr {
   margin-left: 30%;
   margin-right: 30%;
 }
-.ayey section{
+.ayey section {
   margin-top: 10px;
   text-align: center;
 }
-.ayey section a{
+.ayey section a {
   font-size: 20px;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.ayey section a:hover{
+.ayey section a:hover {
   background-color: grey;
   border: 1px solid black;
 }
-.ayey button{
+.ayey button {
   margin-left: 150px;
 }
-.ayey label{
+.ayey label {
   font-size: 20px;
 }
 
@@ -61,8 +61,25 @@ hr {
 }
 
 .navbar {
-  width: 100%;
+  background-color: #80d8de;
 }
+
+.navbar .container-fluid .navbar-brand {
+  margin-left: 3.5%;
+  color: #533f3f;
+}
+
+.navbar .container-fluid .navbar-brand img {
+  margin-right: 5%;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item a {
+  color: black;
+}
+
+/* .navbar .container-fluid .collapse .navbar-nav {
+  margin-left: 85%;
+} */
 
 .welcometext h2 {
   font-style: sans-serif;
@@ -174,7 +191,7 @@ form {
     padding: 0;
     margin: 0;
   }
-  .ayey button{
+  .ayey button {
     margin-left: 100px;
   }
 }
@@ -228,10 +245,10 @@ form {
   .card {
     margin: 0 -42px;
   }
-  .ayey button{
+  .ayey button {
     margin-left: 50px;
   }
-  .ayey label{
+  .ayey label {
     font-size: 20px;
   }
 }

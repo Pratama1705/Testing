@@ -1,4 +1,3 @@
-const DB_User = require('../models/Biasa/personalBiasa');
 const Registrasi_Login_Biasa = require('../models/Biasa/loginRegisBiasa');
 const Hasil_Test = require('../models/Kesehatan/hasilTest');
 const jwt_decode = require('jwt-decode');
@@ -20,15 +19,12 @@ const getHome = async (req, res) => {
 
   const cariDataTest = await Hasil_Test.find({ NIK_pasien: namaUser.NIK });
 
-  // Data test
-  const dataTest = await DB_User.findOne({ _id: decoded.id });
-
   cariDataTest.forEach((e) => {
-    dataTest.keterangan.unshift(e);
+    namaUser.keterangan.unshift(e);
   });
 
   // Cek data test kosong atau enggak
-  if (dataTest.keterangan.length == 0) {
+  if (namaUser.keterangan.length == 0) {
     res.render('../views/Warga/homeBiasa.ejs', {
       firstName: namaUser.firstName,
       dataTest: {
@@ -57,7 +53,7 @@ const getHome = async (req, res) => {
     firstName: namaUser.firstName,
     lastName: namaUser.lastName,
     tanggal: today,
-    dataTest: dataTest.keterangan,
+    dataTest: namaUser.keterangan,
   });
 };
 

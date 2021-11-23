@@ -8,6 +8,7 @@ const loginRegisSchema = mongoose.Schema({
   noHP: String,
   foto: String,
   password: String,
+  keterangan: Array,
 });
 
 module.exports = mongoose.model('Registrasi_Login_Biasa', loginRegisSchema);
