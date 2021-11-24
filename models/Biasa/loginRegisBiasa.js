@@ -11,4 +11,4 @@ const loginRegisSchema = mongoose.Schema({
   keterangan: Array,
 });
 
-module.exports = mongoose.model('Registrasi_Login_Biasa', loginRegisSchema);
+module.exports = mongoose.model('User_Warga', loginRegisSchema);
